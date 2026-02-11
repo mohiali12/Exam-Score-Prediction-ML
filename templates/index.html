@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Score Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <div class="title-box">
+            <h1>Exam Score Predictor</h1>
+            <p class="subtitle">
+                Machine Learning–Based Student Performance Estimation System
+            </p>
+        </div>
+
+        <form method="POST">
+
+            <div class="section">
+                <h3>Input Parameters</h3>
+
+        
+                <div class="slider-group">
+                    <label>Average Study Hours Per Day (0.0 - 12.0)</label>
+                    <div class="slider-container">
+                        <input type="range" step="0.1" min="0" max="12" value="6"
+                               name="study_hours" class="slider" oninput="updateSlider(this)">
+                        <span class="slider-value">6</span>
+                    </div>
+                </div>
+
+                <div class="slider-group">
+                    <label>Attendance Percentage (0.00 - 100.0)</label>
+                    <div class="slider-container">
+                        <input type="range" step="0.12" min="0" max="100" value="80"
+                               name="attendance" class="slider" oninput="updateSlider(this)">
+                        <span class="slider-value">80</span>
+                    </div>
+                </div>
+
+        
+                <div class="slider-group">
+                    <label>Mental Health Score (1 - 10)</label>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="10" value="5"
+                               name="mental_health" class="slider" oninput="updateSlider(this)">
+                        <span class="slider-value">5</span>
+                    </div>
+                </div>
+
+                <div class="slider-group">
+                    <label>Average Sleep Duration (Hours)</label>
+                    <div class="slider-container">
+                        <input type="range" step="0.1" min="0" max="12" value="7"
+                               name="sleep_hours" class="slider" oninput="updateSlider(this)">
+                        <span class="slider-value">7</span>
+                    </div>
+                </div>
+
+                <label>Part-Time Employment </label>
+                <select name="part_time_job">
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+
+                <button type="submit">Estimate Score</button>
+
+            </div>
+
+        </form>
+
+        {% if prediction is not none %}
+        <div class="result">
+            <div class="result-label">Estimated Examination Score</div>
+            <div class="result-value">{{ prediction }}%</div>
+            <div class="result-unit">Out of 100</div>
+        </div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+<script>
+function updateSlider(slider) {
+    const valueSpan = slider.nextElementSibling;
+    valueSpan.innerHTML = slider.value;
+
+    const min = slider.min ? slider.min : 0;
+    const max = slider.max ? slider.max : 100;
+    const percent = (slider.value - min) / (max - min);
+
+    valueSpan.style.left = percent * (slider.offsetWidth - 30) + "px";
+}
+
+document.querySelectorAll(".slider").forEach(slider => {
+    updateSlider(slider);
+});
+</script>
+
+</body>
+</html>

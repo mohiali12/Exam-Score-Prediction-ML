@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.overlay {
+    background: rgba(15, 23, 42, 0.75);
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+
+.container {
+    width: 450px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title-box {
+    background: #0F172A;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.title-box h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #CBD5E1;
+    margin-top: 8px;
+}
+
+.section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0F172A;
+}
+
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    background-color: #1E40AF;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1D4ED8;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #F1F5F9;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #475569;
+}
+
+.result-value {
+    font-size: 38px;
+    font-weight: 800;
+    color: #0F172A;
+    margin-top: 8px;
+}
+
+.result-unit {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748B;
+}
