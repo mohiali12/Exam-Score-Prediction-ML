@@ -110,30 +110,7 @@ Exercise (moderate benefit)
 ├── 📄 notebook.ipynb / notebook.py
 ├── 📄 student_habits_performance.csv
 ├── 📄 README.md
-🚀 Installation & Setup
 
-1️⃣ Clone Repository
-git clone https://github.com/your-username/exam-score-predictor.git
-cd exam-score-predictor
-
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-Example requirements.txt:
-pandas
-numpy
-matplotlib
-seaborn
-jupyter
-
-▶️ Usage
-jupyter notebook
-
-Run all cells step-by-step:
-
-Data Loading
-Data Cleaning
-EDA
-Visualization
 
 
 📦 Future Enhancements
