@@ -12,17 +12,6 @@ Build a foundation for predictive modeling
 Generate actionable insights
 
 
-🧩 Dataset Overview
-📦 Total Records: 1000 students
-📊 Features: 16 columns
-🎯 Target Variable: exam_score
-🔍 Data Schema
-
-Type	Columns
-Numerical	age, study_hours_per_day, social_media_hours, netflix_hours, attendance_percentage, sleep_hours, exercise_frequency, mental_health_rating, exam_score
-Categorical	gender, part_time_job, diet_quality, parental_education_level, internet_quality, extracurricular_participation
-Identifier	student_id
-
 
 🔬 Data Preprocessing Pipeline
 ✅ 1. Data Loading
