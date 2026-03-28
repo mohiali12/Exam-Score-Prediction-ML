@@ -85,34 +85,36 @@ Internet	Mostly Good/Average
 🔥 One of the strongest predictors of success
 
 📉 Visualization Strategy
+
 📦 Libraries Used
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style="whitegrid")
+
 📊 Plots Created
 Distribution plots (histograms)
 Count plots (categorical features)
 Box plots (outlier detection)
 Correlation heatmap
-🔗 Feature Relationships (Conceptual)
-Feature	Relationship with Exam Score
-study_hours	⬆ Positive
-attendance	⬆ Strong Positive
-social_media	⬇ Negative
-netflix_hours	⬇ Negative
-sleep_hours	⚖ Optimal Range
-mental_health	⬆ Positive
+
+
+
 🧠 Key Findings
+
 🔥 High Impact Factors
 Study hours
 Attendance
 Mental health
+
 ⚠️ Negative Factors
 Social media overuse
 Excess entertainment time
+
 ⚖️ Balanced Factors
 Sleep (too low or too high is harmful)
 Exercise (moderate benefit)
+
+
 🏗️ Project Architecture
 📁 Exam-Score-Predictor
 │
@@ -120,9 +122,11 @@ Exercise (moderate benefit)
 ├── 📄 student_habits_performance.csv
 ├── 📄 README.md
 🚀 Installation & Setup
+
 1️⃣ Clone Repository
 git clone https://github.com/your-username/exam-score-predictor.git
 cd exam-score-predictor
+
 2️⃣ Install Dependencies
 pip install -r requirements.txt
 Example requirements.txt:
@@ -131,6 +135,7 @@ numpy
 matplotlib
 seaborn
 jupyter
+
 ▶️ Usage
 jupyter notebook
 
@@ -140,36 +145,39 @@ Data Loading
 Data Cleaning
 EDA
 Visualization
+
+
 📦 Future Enhancements
 🔮 Machine Learning Integration
 Linear Regression
 Random Forest
 XGBoost
+
 🎯 Prediction Goal
 exam_score = f(student habits)
+
+
 🌐 Deployment Ideas
 Streamlit dashboard
 Flask web app
 Interactive analytics dashboard
+
+
 📊 Potential Research Extensions
 Feature importance analysis
 Clustering student behavior patterns
 Recommendation system
+
+
 ⚠️ Limitations
 Dataset is limited
 Missing values removed (data loss)
 No time-series analysis
 Correlation ≠ causation
-🤝 Contribution Guidelines
-Fork the repo
-Create a branch
-Commit changes
-Submit pull request
-📜 License
 
-MIT License – free to use and modify
+
 
 👨‍💻 Author
 
-Hassan (Mohi)
+Mohsin Ali
 🎯 Python Developer | Machine Learning Enthusiast
